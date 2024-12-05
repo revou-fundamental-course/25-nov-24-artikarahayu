@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat website responsif -->
+    <title>Kalkulator BMI</title> <!-- Judul website -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan file CSS -->
+</head>
+
+<body>
+    <!-- Container utama -->
+    <div class="container">
+        <!-- Bagian Kalkulator BMI -->
+        <section class="bmi-calculator">
+            <h1>Kalkulator BMI</h1> <!-- Judul aplikasi -->
+            <p>Hitung Body Mass Index (BMI) Anda dan temukan status kesehatan tubuh Anda.</p> <!-- Deskripsi singkat -->
+
+            <!-- Form input BMI -->
+            <form id="bmiForm">
+                <!-- Pilihan jenis kelamin -->
+                <div class="form-group">
+                    <label for="gender">Jenis Kelamin</label> <!-- Label untuk dropdown -->
+                    <select id="gender" required> <!-- Dropdown pilihan jenis kelamin -->
+                        <option value="" disabled selected>Pilih</option>
+                        <option value="Laki-Laki">Laki-Laki</option>
+                        <option value="Wanita">Wanita</option>
+                    </select>
+                </div>
+
+                <!-- Input berat badan -->
+                <div class="form-group">
+                    <label for="weight">Berat Badan (kg)</label> <!-- Label untuk berat badan -->
+                    <input type="number" id="weight" placeholder="Masukkan berat badan" required>
+                    <!-- Input berat badan -->
+                </div>
+
+                <!-- Input Usia -->
+                <div class="form-group">
+                    <label for="weight">Usia (Tahun)</label> <!-- Label untuk Usia-->
+                    <input type="number" id="weight" placeholder="Masukkan Usia Anda" required>
+                    <!-- Input Usia-->
+                </div>
+
+                <!-- Input tinggi badan -->
+                <div class="form-group">
+                    <label for="height">Tinggi Badan (cm)</label> <!-- Label untuk tinggi badan -->
+                    <input type="number" id="height" placeholder="Masukkan tinggi badan" required>
+                    <!-- Input tinggi badan -->
+                </div>
+
+                <!-- Tombol untuk submit -->
+                <button type="submit" class="btn">Hitung BMI</button>
+            </form>
+        </section>
+
+        <!-- Bagian Hasil BMI -->
+        <section class="bmi-result" id="bmiResultSection" style="display: none;"> <!-- Awalnya tersembunyi -->
+            <h2>Hasil BMI</h2> <!-- Judul hasil BMI -->
+            <div id="bmiOutput"></div> <!-- Tempat menampilkan hasil BMI -->
+            <button class="btn" onclick="resetForm()">Hitung Ulang</button> <!-- Tombol untuk reset form -->
+        </section>
+    </div>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
