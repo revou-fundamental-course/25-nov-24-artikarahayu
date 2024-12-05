@@ -1,0 +1,134 @@
+/* Reset dasar untuk semua elemen */
+* {
+    margin: 0;
+    /* Menghapus margin default */
+    padding: 0;
+    /* Menghapus padding default */
+    box-sizing: border-box;
+    /* Menentukan model box */
+}
+
+/* Styling body halaman */
+body {
+    font-family: Arial, sans-serif;
+    /* Font utama halaman */
+    background: #f0f8ff;
+    /* Warna background */
+    padding: 20px;
+    /* Spasi di sekitar halaman */
+}
+
+/* Container utama */
+.container {
+    max-width: 500px;
+    /* Lebar maksimum container */
+    margin: 0 auto;
+    /* Membuat container berada di tengah halaman */
+    padding: 20px;
+    /* Spasi di dalam container */
+    background: white;
+    /* Warna background container */
+    border-radius: 10px;
+    /* Membuat sudut melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Efek bayangan */
+}
+
+/* Heading utama */
+h1,
+h2 {
+    text-align: center;
+    /* Teks berada di tengah */
+    margin-bottom: 20px;
+    /* Spasi bawah */
+    color: #4caf50;
+    /* Warna teks hijau */
+}
+
+/* Paragraf */
+p {
+    text-align: center;
+    /* Teks berada di tengah */
+    margin-bottom: 20px;
+    /* Spasi bawah */
+    font-size: 0.9rem;
+    /* Ukuran font lebih kecil */
+    color: #555;
+    /* Warna teks abu-abu */
+}
+
+/* Formulir styling */
+form {
+    display: flex;
+    /* Mengatur elemen menjadi flex */
+    flex-direction: column;
+    /* Elemen diatur secara vertikal */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Spasi antara grup input */
+}
+
+label {
+    font-weight: bold;
+    /* Teks tebal untuk label */
+    margin-bottom: 5px;
+    /* Spasi bawah label */
+    display: block;
+    /* Membuat label satu baris penuh */
+}
+
+input,
+select {
+    width: 100%;
+    /* Lebar penuh */
+    padding: 10px;
+    /* Spasi dalam input */
+    margin-top: 5px;
+    /* Spasi atas */
+    border: 1px solid #ddd;
+    /* Border abu-abu */
+    border-radius: 5px;
+    /* Sudut melengkung */
+}
+
+/* Tombol */
+.btn {
+    background: #4caf50;
+    /* Warna hijau */
+    color: white;
+    /* Warna teks putih */
+    padding: 10px;
+    /* Spasi dalam tombol */
+    border: none;
+    /* Tanpa border */
+    border-radius: 5px;
+    /* Sudut melengkung */
+    cursor: pointer;
+    /* Kursor berubah menjadi pointer */
+    margin-top: 15px;
+    /* Spasi atas tombol */
+}
+
+.btn:hover {
+    background: #45a049;
+    /* Warna hijau lebih gelap saat hover */
+}
+
+/* Bagian hasil BMI */
+.bmi-result {
+    text-align: center;
+    /* Teks berada di tengah */
+    margin-top: 20px;
+    /* Spasi atas */
+}
+
+.bmi-result #bmiOutput {
+    margin-bottom: 20px;
+    /* Spasi bawah */
+    font-size: 1.2rem;
+    /* Ukuran font besar */
+    color: #333;
+    /* Warna teks abu-abu gelap */
+}
